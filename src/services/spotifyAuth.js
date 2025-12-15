@@ -4,7 +4,7 @@
 // 1. COSTANTI E ENDPOINTS (Mantieni questa parte)
 // ----------------------------------------------------
 const clientId = "4b4e226938f9419898454598f89f2324";
-const redirectUri = "https://unconversant-milton-untraitorously.ngrok-free.dev";
+const redirectUri = "https://spotifynd.netlify.app/";
 const scope = "playlist-modify-public playlist-modify-private user-read-private"; // Aggiunto user-read-private per completezza
 const authUrl = "https://accounts.spotify.com/authorize";
 const tokenUrl = "https://accounts.spotify.com/api/token";
