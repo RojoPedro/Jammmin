@@ -6,7 +6,6 @@ const SearchBar = ({searchFunc}) => {
         <div className={styles.searchContainer}>
             <label className={styles.label}>Search a song:</label>
             <input 
-                value={searchTerm}
                 className={styles.input}
                 type="text" 
                 placeholder="Artist, song, or album..."
