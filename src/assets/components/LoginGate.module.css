@@ -22,7 +22,7 @@
   background-size: 200% 200%;
   animation: gradientShift 15s ease infinite;
   padding: 80px;
-  cursor: url('/hand-cursor.png'), auto;
+  cursor: auto;
   font-family: 'Inter', sans-serif;
   overflow: hidden;
 }

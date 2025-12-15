@@ -10,8 +10,7 @@ const SearchBar = ({searchFunc}) => {
                 className={styles.input}
                 type="text" 
                 placeholder="Artist, song, or album..."
-                onChange={({target}) => searchFunc(target.value)
-                }
+                onChange={({target}) => searchFunc(target.value)}
             />
         </div>
     );
