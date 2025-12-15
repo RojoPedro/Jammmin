@@ -232,7 +232,7 @@ const onSavePlaylist = async () => {
     </div>
     <div className={styles.mainContent}>
         <div>
-            <SearchBar searchFunc={onSearch} setSearchTerm={setSearchTerm}/>
+            <SearchBar searchFunc={onSearch} setSearchTerm={setSearchTerm} searchTerm={searchTerm}/>
             <SearchResults toRender={searchResults} onAdded={onTrackAdded}/>
         </div>
         <Playlist tracks={tracks} title={playlistTitle} onRemove={onTrackRemoved} setTitle={setPlaylistTitle}/>
