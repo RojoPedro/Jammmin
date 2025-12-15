@@ -11,7 +11,6 @@ import SearchResults from "./SearchResults.jsx";
 import LoginGate from "./LoginGate.jsx";
 
 const App = () => {
-    const [ searchTerm, setSearchTerm] = useState("");
     const [accessToken, setAccessToken] = useState(null);
     const [userId, setUserId] = useState(null); // ⬅️ NUOVO: Necessario per salvare playlist
     const [isLoading, setIsLoading] = useState(false); // ⬅️ NUOVO: Stato di caricamento
@@ -233,7 +232,7 @@ const onSavePlaylist = async () => {
     </div>
     <div className={styles.mainContent}>
         <div>
-            <SearchBar searchFunc={onSearch} setSearchTerm={setSearchTerm} searchTerm={searchTerm}/>
+            <SearchBar searchFunc={onSearch}/>
             <SearchResults toRender={searchResults} onAdded={onTrackAdded}/>
         </div>
         <Playlist tracks={tracks} title={playlistTitle} onRemove={onTrackRemoved} setTitle={setPlaylistTitle}/>

@@ -1,7 +1,7 @@
 import React from "react";
 import styles from './SearchBar.module.css';
 
-const SearchBar = ({searchFunc, setSearchTerm, serachTerm}) => {
+const SearchBar = ({searchFunc}) => {
     return (
         <div className={styles.searchContainer}>
             <label className={styles.label}>Search a song:</label>
@@ -10,10 +10,7 @@ const SearchBar = ({searchFunc, setSearchTerm, serachTerm}) => {
                 className={styles.input}
                 type="text" 
                 placeholder="Artist, song, or album..."
-                onChange={({target}) => {
-                    setSearchTerm(target.value);
-                    searchFunc(target.value)
-                }
+                onChange={({target}) => searchFunc(target.value)
                 }
             />
         </div>
