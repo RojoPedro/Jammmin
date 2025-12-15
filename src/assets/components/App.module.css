@@ -70,7 +70,7 @@
   background: #1ed760;
   transform: translateY(-3px);
   box-shadow: 0 15px 40px rgba(29, 185, 84, 0.6);
-}
+}   
 
 .saveButton:active {
   transform: translateY(-1px);

@@ -17,7 +17,7 @@ const App = () => {
 
     const [searchResults, setSearchResults] = useState([]);
     const [tracks, setTracks] = useState([])
-    const [playlistTitle, setPlaylistTitle] = useState("My Playlist")
+    const [playlistTitle, setPlaylistTitle] = useState("")
     const [savedPlaylist, setSavedPlaylist] = useState([])
 
     // Funzione per recuperare l'ID Utente (necessaria prima di creare la playlist)
